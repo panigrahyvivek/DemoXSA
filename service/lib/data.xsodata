@@ -1,0 +1,4 @@
+service{
+	"DemoXSA.db::ArticlesV2.Store" as "Stores";
+	"DemoXSA.db::ArticlesV2.StoreView" as "StoreView" keys("StoreID");
+}

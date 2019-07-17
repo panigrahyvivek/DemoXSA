@@ -1,0 +1,16 @@
+namespace DemoXSA.db;
+
+context ArticlesV2 {
+
+    /*@@layout{"layoutInfo":{"x":220,"y":93.5}}*/
+    entity Store {
+        key StoreID   : String(10);
+            StoreName : String(10);
+    };
+    
+    view StoreView as
+    	select from Store{
+    		StoreID,
+    		StoreName
+    	};
+};
